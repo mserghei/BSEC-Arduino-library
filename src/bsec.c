@@ -435,7 +435,7 @@ int8_t setBme68xConfig(bsec_bme_settings_t bme68xSettings)
 
 		heatrConf.enable = bme68xSettings.run_gas;
 		heatrConf.heatr_temp = bme68xSettings.heater_temperature;
-		heatrConf.heatr_dur = bme68xSettings.heating_duration;
+		heatrConf.heatr_dur = bme68xSettings.heater_duration;
 
 		bme68xSts = bme68x_set_heatr_conf(BME68X_FORCED_MODE, &heatrConf, &_bme68x);
 		
